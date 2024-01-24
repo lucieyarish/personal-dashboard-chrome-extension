@@ -21,6 +21,8 @@ p {
 /* --- GENERAL SETUP --- */
 :root {
     font-family: 'Karla', sans-serif;
+    /* COLORS */
+    --white: #FFFFFF;
 }
 
 body {
@@ -29,4 +31,42 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: var(--white);
+    text-shadow: 1px 1px 2px #474747;
+}
+
+/* --- TYPOGRAPHY --- */
+.weather-text {
+    font-size: 1.7rem;
+}
+
+.time-text {
+    font-size: 5rem;
+}
+
+.location-text {
+    font-size: 1.3rem;
+}
+
+/* --- LAYOUT --- */
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather,
+.location {
+    margin: 2em;
+}
+
+.weather {
+    align-self: flex-end;
+}
+
+.location {
+    align-self: flex-start;
+    margin: 2em;
 }
