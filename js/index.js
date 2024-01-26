@@ -35,7 +35,6 @@ if ('geolocation' in navigator) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         const temperature = Math.round(data.main.temp);
         weatherEl.innerHTML = `
