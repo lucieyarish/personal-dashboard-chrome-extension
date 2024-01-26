@@ -59,7 +59,7 @@ body {
 
 .weather,
 .location {
-    margin: 2em;
+    margin: 1.5em;
 }
 
 .weather {
@@ -69,4 +69,26 @@ body {
 .location {
     align-self: flex-start;
     margin: 2em;
+}
+
+.temperature-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.temperature {
+    font-size: 3rem;
+    align-self: center;
+}
+
+.temperature-location {
+    display: flex;
+    justify-content: center;
+    margin-left: 2em;
+    margin-top: -1em;
+}
+
+.weather-location {
+    font-size: 2rem;
+    /* justify-self: flex-end; */
 }
